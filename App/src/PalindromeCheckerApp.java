@@ -1,8 +1,21 @@
 public class PalindromeCheckerApp {
     public static void main(String[] args){
-        System.out.println("Halloooo, welcome to the Plaindrome checker app");
-        System.out.println("System stabalized successfully");
-        System.out.println("This is from sreevalli");
+        // Hardcoded string
+        String word = "madam";
+
+        // Reverse the string
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed = reversed + word.charAt(i);
+        }
+
+
+        if (word.equals(reversed)) {
+            System.out.println(word + " is a Palindrome.");
+        } else {
+            System.out.println(word + " is NOT a Palindrome.");
+        }
     }
 
 
