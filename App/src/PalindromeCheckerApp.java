@@ -9,12 +9,10 @@ public class PalindromeCheckerApp {
         // Deque to hold characters
         Deque<Character> deque = new ArrayDeque<>();
 
-        // Insert all characters into deque
         for (int i = 0; i < original.length(); i++) {
             deque.addLast(original.charAt(i));
         }
 
-        // Compare front and rear elements
         boolean isPalindrome = true;
         while (deque.size() > 1) {
             char front = deque.removeFirst();
