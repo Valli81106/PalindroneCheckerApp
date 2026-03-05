@@ -1,17 +1,16 @@
 public class PalindromeCheckerApp {
+
     public static void main(String[] args){
 
-
-        String original = "radar";
-        boolean isPalindrome = checkPalindrome(original, 0, original.length() - 1);
-
+        String original = "Ra dar";
+        String normalized = original.toLowerCase().replaceAll("\\s+", "");
+        boolean isPalindrome = checkPalindrome(normalized, 0, normalized.length() - 1);
         if (isPalindrome) {
             System.out.println(original + " is a Palindrome.");
         } else {
             System.out.println(original + " is NOT a Palindrome.");
         }
     }
-    // main Recursion
     private static boolean checkPalindrome(String str, int start, int end) {
 
         if (start >= end) {
