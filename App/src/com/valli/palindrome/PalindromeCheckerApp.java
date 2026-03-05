@@ -1,3 +1,5 @@
+package com.valli.palindrome;
+
 public class PalindromeCheckerApp {
 
     public static void main(String[] args){
@@ -11,7 +13,7 @@ public class PalindromeCheckerApp {
             System.out.println(original + " is NOT a Palindrome.");
         }
     }
-    private static boolean checkPalindrome(String str, int start, int end) {
+    private static boolean checkPalindrome(String str, int start,int end) {
 
         if (start >= end) {
             return true;
